@@ -8,10 +8,8 @@ import { RootTabScreenProps } from '../types';
 export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Boulangerie Items</Text>
-      {"\n"}
-      {"\n"}
-      <Text style={styles.baseText}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor debitis ducimus sint illo asperiores quaerat delectus, quis doloribus qui, tempore assumenda facilis ipsa repellat, dolorum excepturi. Illo laudantium recusandae vel.
+      <Text style={styles.title}>Boulangerie Items {"\n"}{"\n"}{"\n"}</Text>
+      <Text style={styles.baseText}>Bienvenue dans notre super App de Startuper prêt à empocher plein de frics sur le dos de gens qui pensent avoir besoin d'une nouvelle app hyper trendy, qui potentiellement rendrait leur quotidien un peu moins dépriment qu'il ne l'est déjà. 
       </Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <EditScreenInfo path="/screens/TabOneScreen.tsx" />
