@@ -11,7 +11,8 @@ export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'
       <Text style={styles.title}>Boulangerie Items</Text>
       {"\n"}
       {"\n"}
-      <Text style={styles.baseText}>Tab One</Text>
+      <Text style={styles.baseText}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor debitis ducimus sint illo asperiores quaerat delectus, quis doloribus qui, tempore assumenda facilis ipsa repellat, dolorum excepturi. Illo laudantium recusandae vel.
+      </Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <EditScreenInfo path="/screens/TabOneScreen.tsx" />
     </View>
@@ -25,6 +26,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   baseText: {
+    textAlign: 'center',
     fontFamily: "Cochin"
   },
   title: {
