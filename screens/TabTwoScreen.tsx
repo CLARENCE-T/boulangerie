@@ -12,9 +12,10 @@ export default function TabTwoScreen() {
   const [data, setData] = useState([]);
   const getMovies = async () => {
       try {
-        const response = await fetch('https://reactnative.dev/movies.json');
+        const response = await fetch('https://heroku-vs-bvp.herokuapp.com/get-items/all');
         const json = await response.json();
-        setData(json.movies);
+        console.log(json)
+        setData(json);
     } catch (error) {
       console.error(error);
     } finally {
@@ -35,9 +36,9 @@ export default function TabTwoScreen() {
        {isLoading ? <ActivityIndicator/> : (
         <FlatList
           data={data}
-          keyExtractor={({ id }, index) => id}
+          keyExtractor={({ id }, index) => id.toString()}
           renderItem={({ item }) => (
-            <Text>{item.title}, {item.releaseYear}</Text>
+            <Text>{item.unit}   {item.name}: {item.price_per_unit} €</Text>
           )}
         />
       )}
